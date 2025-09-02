@@ -3,7 +3,7 @@ return {
     dependencies = {{
         "mason-org/mason.nvim",
         opts = {}
-    }}, -- portable package manager for lsp's
+    }, "creativenull/efmls-configs-nvim"}, -- portable package manager for lsp's
     config = function()
         require('utils.diagnostics').setup() -- diagnostic signs
         require('servers')
