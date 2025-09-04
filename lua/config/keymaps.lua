@@ -71,8 +71,8 @@ vim.keymap.set("n", "J", "mzJ`z", {
     desc = "Join lines and keep cursor position"
 })
 
-    -- Quick config editing
-    vim.keymap.set("n", "<leader>rc", "<Cmd>e ~/.config/nvim/init.lua<CR>", {
+-- Quick config editing
+vim.keymap.set("n", "<leader>rc", "<Cmd>e ~/.config/nvim/init.lua<CR>", {
     desc = "Edit config"
 })
 
@@ -82,4 +82,9 @@ vim.keymap.set("n", "<leader>m", "<Cmd>NvimTreeFocus<CR>", {
 })
 vim.keymap.set("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>", {
     desc = "Toggle File Explorer"
+})
+
+-- Save with Ctrl+S
+vim.keymap.set("n", "<C-s>", "<Cmd>w<CR>", {
+    desc = "Save file"
 })
